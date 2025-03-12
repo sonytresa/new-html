@@ -1,0 +1,48 @@
+.div1{
+    background-color: aqua;
+    color: brown;
+    width: 200px;
+    height: 200px;
+}
+.div2
+{
+    background-color: rgb(161, 234, 24);
+    color: rgb(91, 7, 131);
+    width: 200px;
+    height: 200px;
+}
+.div3
+{
+    background-color:palevioletred;
+    color: green;
+    width: 200px;
+    height: 200px;
+}
+.div4
+{
+    background-color:peachpuff;
+    color: black;
+    width: 200px;
+    height: 200px;
+}
+*{
+    box-sizing: border-box;
+}
+.parent
+{
+ height: 200vh;
+ border: solid black;
+ display: flex;
+ flex-direction:row;
+ /* justify-content: center; */
+ /* justify-content: left; */
+ /* justify-content: space-around; */
+  /* justify-content: space-between;  */
+  /* justify-content:first baseline; */
+  /* justify-content:space-evenly ; */
+ /* justify-content: flex-end; */
+ /* align-items: flex-start; */
+ /* align-items: flex-end; */
+ /* align-items: center; */
+ flex-wrap: wrap;
+}
