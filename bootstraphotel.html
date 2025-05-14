@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        /* .continer-fluid{
+         border: 2px solid rgb(247, 243, 5);
+        }
+        
+        /* .col-4, .col-md-5,.row{
+        border: 2px solid rgb(250, 227, 20);
+        } */ 
+         th{
+          background-color: #ecd505;
+         }
+        
+     </style>  
+       
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #eed706;" data-bs-theme="light">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: ghostwhite;" href="#">Tasty Foods</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Orders</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Deals
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+             
+           </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://br24.com/wp-content/uploads/Br24_Blog_FoodPhotography_OverheadAngle.jpg"  class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://iso.500px.com/wp-content/uploads/2020/02/Sushi-and-sashimi-variety-on-rustic-background-By-Alena-Haurylik-2.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://photobangalore.com/wp-content/uploads/2021/01/dalfry-photography-bangalore-1.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+        <div class="container my-5" id="order">
+          <h1 class="text-center m-5">Order Your Food</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center border-2 border warning" style="height: 25rem; width: 18rem;">
+                        <img src="https://foodstylistpayalgupta.com/wp-content/uploads/2020/12/Food-stylist-for-Indian-main-course-Chicken-biryani.jpg"  height="200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">biriyani</h5>
+                          <p class="card-text">Tasty Biriyani.</p>
+                          <a href="#" class="btn btn-primary">order now</a>
+                        </div>
+                      </div>
+                    </div>
+             
+     
+       
+            <div class="col-md-4">
+                <div class="card text-center border-2 border warning"  style="width: 18rem; height: 25rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE-f93uoK67qDwf73HfNTqXIKW4kPfQkd77k3xu9RLO1CmMWQ_HLP4rZplHHCKi5E-_Ao&usqp=CAU"  height="200"      class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">dosa</h5>
+                      <p class="card-text">crispydosa.</p>
+                      <a href="#" class="btn btn-primary">order now</a>
+                    </div>
+                  </div>
+                </div>
+     
+    
+          <div class="col-md-4">
+              <div class="card text-center border-2 border warning" style="height: 25rem; width: 18rem;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuTW9s_dqgfkUkc8XaAnQVXLSPFiF_jIvzOA&s" height="200" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">palappam</h5>
+                    <p class="card-text">tasty palappam</p>
+                    <a href="#" class="btn btn-primary">order now</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5" id="order">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center border-2 border warning" style="height: 25rem; width: 18rem;">
+                    <img src="https://pbs.twimg.com/media/E3I2WNNVEAAqod4?format=jpg&name=small"  height="200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">porotta</h5>
+                      <p class="card-text">porott and beef.</p>
+                      <a href="#" class="btn btn-primary">order now</a>
+                    </div>
+                  </div>
+                </div>
+         
+ 
+   
+        <div class="col-md-4">
+            <div class="card text-center border-2 border warning"  style="width: 18rem; height: 25rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrSodh2_bz3T_LLA16yP9WdpyAoAUkC5-TdA&s"  height="200"      class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">chinese</h5>
+                  <p class="card-text">chinese food</p>
+                  <a href="#" class="btn btn-primary">order now</a>
+                </div>
+              </div>
+            </div>
+ 
+
+      <div class="col-md-4">
+          <div class="card text-center border-2 border warning" style="height: 25rem; width: 18rem;">
+              <img src="https://amritsr.com/wp-content/uploads/2021/11/seafood-benefits.jpg" height="200" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">sea food</h5>
+                <p class="card-text">sea food</p>
+                <h5 class="card-title text-danger"> Rs 500</h5>
+                <a href="#" class="btn btn-primary">order now</a>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div>
+ 
+  <div class="container-fluid">
+   <h1 class="text-center"> Location</h1>
+   <div class="row bg-warning">
+   <div class="col-6 mb-1">
+   <h1 class="text-white">Tasty foods</h1>
+       <h6>calicut</h6>
+      <h6>phone number - 9584695221</h6>
+   <div class="col-6 d-flex justify-content-end b-5 border-danger mb-1"></div>
+ <iframe src="https://lh3.googleusercontent.com/90TpARzCVIuf7v-vY9K2GaFU204Hq0us2sBL4So3ihcWRXYJ7rdx9ggMlI00SgzfUcFR_Ikxa2w-SzGJV6epMyRgn1P6th9oSBdWwv4=s0" frameborder="0" class=""></iframe>
+</div>
+</div>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>

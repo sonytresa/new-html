@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <input type="text" id="demo">
+    <button onclick="day()"> day</button>
+
+    <script>
+    function day()
+    {
+
+    a=Number(document.getElementById("demo").value)
+    switch(a)
+    {
+        case 0:
+                 value="sunday";
+                 break;
+        case 1:
+                 value="monday";
+                 break;
+        case 3:
+                 value="tuesday";
+                 break;
+        case 4:
+                 value="wednesday";
+                 break;
+        case 5:
+                 value="thursday";
+                 break;
+        case 6:
+                 value="friday";
+                 break;
+        case 7:
+                 value="saturday";
+                 break;
+        default:
+                value="not defined"
+
+              }
+             document.getElementById("result").innerHTML=" day is " + value;
+            
+
+            }
+    </script>
+</body>
+
+</html>

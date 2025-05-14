@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="val1">
+    <input type="text" id="val2">
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+    <input type="text" id="value"> 
+    <script>
+        function add()
+    {
+        var a=Number(document.getElementById("val1").value)
+        var b=Number(document.getElementById("val2").value)
+        c=a+b
+       document.getElementById("value").value=c
+        
+    }
+    function sub()
+    {
+        var a=Number(document.getElementById("val1").value)
+        var b=Number(document.getElementById("val2").value)
+        c=a-b
+       document.getElementById("value").value=c
+        
+    }
+    function mul()
+    {
+        var a=Number(document.getElementById("val1").value)
+        var b=Number(document.getElementById("val2").value)
+        c=a*b
+       document.getElementById("value").value=c
+        
+    }
+    function div()
+    {
+        var a=Number(document.getElementById("val1").value)
+        var b=Number(document.getElementById("val2").value)
+        c=a/b
+       document.getElementById("value").value=c
+        
+    }
+    </script>
+</body>
+</html>

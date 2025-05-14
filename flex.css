@@ -3,6 +3,8 @@
     color: brown;
     width: 200px;
     height: 200px;
+    order: 3;
+    align-self: center;
 }
 .div2
 {
@@ -10,6 +12,8 @@
     color: rgb(91, 7, 131);
     width: 200px;
     height: 200px;
+    order: 1;
+    align-self: flex-start;
 }
 .div3
 {
@@ -17,6 +21,7 @@
     color: green;
     width: 200px;
     height: 200px;
+    order: 4;
 }
 .div4
 {
@@ -24,6 +29,7 @@
     color: black;
     width: 200px;
     height: 200px;
+    order: 2;
 }
 *{
     box-sizing: border-box;
@@ -44,5 +50,7 @@
  /* align-items: flex-start; */
  /* align-items: flex-end; */
  /* align-items: center; */
- flex-wrap: wrap;
+ /* flex-wrap: wrap; */
+ /* align-content: flex-start; */
+ flex-flow: row wrap;
 }

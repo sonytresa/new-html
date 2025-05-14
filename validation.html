@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <div> Enter Name:   <input type="text" id="id_name" onkeyup="clearmsg('id1')"> 
+    <span id="id1" style="color: red;"></span></div> <br> 
+    <div> Enter Mobile:   <input type="text" id="id_mobile" onkeyup="clearmsg('id2')"> 
+    <span id="id2"  style="color: red;"></span></div><br> 
+    <div>Enter address:   <input type="text" id="id_adress" onkeyup="clearmsg('id3')"> 
+    <span id="id3"  style="color: red;"></span></div><br> 
+    <div> Enter Email:   <input type="text" id="id_uname" onkeyup="clearmsg('id4')"> 
+    <span id="id4"  style="color: red;"></span></div><br> 
+    <div> Enter password :   <input type="text" id="id_paswd" onkeyup="clearmsg('id5')">
+    <span id="id5"  style="color: red;"></span> </div> <br>
+    <button onclick= "return validate()"> submit </button>
+    </form>
+</body>
+<script>
+    function validate()
+    {
+        var name=document.getElementById("id_name").value;
+        var mobile=document.getElementById("id_mobile").value;
+        var adress=document.getElementById("id_adress").value;
+        var username=document.getElementById("id_uname").value;
+        var pswd=document.getElementById("id_paswd").value;
+        if(name=="")
+    {
+        document.getElementById("id1").innerHTML="enter Name";
+        return false;
+    }
+    if(mobile=="")
+    {
+        document.getElementById("id2").innerHTML="Enter Mobile number";
+        return false;
+    }
+    if(adress=="")
+    {
+        document.getElementById("id3").innerHTML="Enter address";
+        return false;
+    }
+    if(username=="")
+    {
+        document.getElementById("id4").innerHTML="enter User Name";
+        return false;
+    }
+    if(pswd=="")
+    {
+        document.getElementById("id5").innerHTML="enter password";
+        return false;
+    }
+    }
+    function clearmsg(span1)
+    {
+       document.getElementById(span1).innerHTML=" "; 
+    }
+    
+</script>
+</html>

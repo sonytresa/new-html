@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <span id="id1"></span>
+</body>
+<script>
+       let xhttp=new XMLHttpRequest();
+       xhttp.onreadystatechange=()=>
+       {
+        if(xhttp.readystate==4 && xhttp.status==200)
+       {
+        document.getElementById("id1").innerHTML=xhttp.responseText;
+
+       }
+       }
+       xhttp.open("GET","ajax.txt");
+       xhttp.send();
+</script>
+</html>

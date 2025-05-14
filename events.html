@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Focus: <input type="text" id="id1" onfocus="Focusevent()"><br><br>
+    keydown: <input type="text" id="id2" onkeydown="keydown()"><br><br>
+      keyup: <input type="text" id="id3" onkeyup="keyup()" ><br><br>
+      user name <input type="text" id="input" onfocus="focusfunction()"  onblur="blurfunction()"><br><br>
+    <h1 id="mouse" onmouseover="mouseover()" onmouseout="mouseout()" > click</h1>
+    <body onload="window.alert('page')">
+        
+    </body>
+    <script>
+        function Focusevent()
+        {
+            document.getElementById("id1").style.backgroundColor="red";
+        }
+        function keydown()
+        {
+            alert("restricted");
+        }
+        function keyup()
+        {
+           var a=document.getElementById("id3");
+            a.value=a.value.toUpperCase();
+        }
+         function focusfunction()
+        {
+            document.getElementById("input").style.backgroundColor="red";
+        }
+         function blurfunction()
+        {
+            document.getElementById("input").style.backgroundColor="yellow";
+        }
+        function mouseover()
+        {
+            document.getElementById("mouse").style.color="green"; 
+        }
+        function mouseout()
+        {
+            document.getElementById("mouse").style.color="blue"; 
+        }
+
+    </script>
+</body>
+</html>
